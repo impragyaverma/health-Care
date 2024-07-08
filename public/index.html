@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Healthy Life with Healthy Routines ❤️</h1>
+            <nav>
+                <ul>
+                    <li><a href="diet.html">Diet</a></li>
+                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="gym.html">Gym</a></li>
+                </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="#" id="loginBtn">Login</a> / 
+                <a href="#" id="registerBtn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">We-Fit</h2>
+                <div class="section-content">
+                    <h3>Welcome to our website dedicated to promoting a healthy lifestyle through diet, yoga, and exercise!</h3>
+                    <div class="image-container">
+                        <img src="image.jpg" alt="Healthy Lifestyle" class="health-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Healthy Lifestyle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerFirstName">First Name:</label>
+                <input type="text" id="registerFirstName" name="registerFirstName" required>
+                
+                <label for="registerLastName">Last Name:</label>
+                <input type="text" id="registerLastName" name="registerLastName" required>
+
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="registerEmail" required>
+                
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+                
+                <label for="registerConfirmPassword">Confirm Password:</label>
+                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required>
+                
+                <label for="registerAge">Age:</label>
+                <input type="number" id="registerAge" name="registerAge" required>
+                
+                <label for="registerGender">Gender:</label>
+                <select id="registerGender" name="registerGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
